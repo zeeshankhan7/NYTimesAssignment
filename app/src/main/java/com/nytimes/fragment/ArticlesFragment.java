@@ -1,29 +1,29 @@
-package com.newyorktimes.fragment;
+package com.nytimes.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.newyorktimes.NewYorkTimesApplication;
-import com.newyorktimes.R;
-import com.newyorktimes.activity.MainActivity;
-import com.newyorktimes.adapter.ArticlesAdapter;
-import com.newyorktimes.model.Response;
-import com.newyorktimes.network.NetworkError;
-import com.newyorktimes.network.Service;
-import com.newyorktimes.utils.NewYorkTimesProgressDialog;
+import com.nytimes.NewYorkTimesApplication;
+import com.nytimes.R;
+import com.nytimes.activity.MainActivity;
+import com.nytimes.adapter.ArticlesAdapter;
+import com.nytimes.model.Response;
+import com.nytimes.network.NetworkError;
+import com.nytimes.network.Service;
+import com.nytimes.utils.NewYorkTimesProgressDialog;
 
 import javax.inject.Inject;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 public class ArticlesFragment extends Fragment {

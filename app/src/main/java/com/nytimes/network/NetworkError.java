@@ -1,9 +1,9 @@
-package com.newyorktimes.network;
+package com.nytimes.network;
 
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import com.newyorktimes.model.Response;
+import com.nytimes.model.Response;
 
 import java.io.IOException;
 import java.util.List;

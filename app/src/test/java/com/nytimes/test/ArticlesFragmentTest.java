@@ -1,4 +1,4 @@
-package com.newyorktimes.test;
+package com.nytimes.test;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -6,17 +6,17 @@ import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.newyorktimes.NewYorkTimesApplication;
-import com.newyorktimes.R;
-import com.newyorktimes.activity.MainActivity;
-import com.newyorktimes.fragment.ArticlesFragment;
-import com.newyorktimes.network.AppComponent;
-import com.newyorktimes.network.NetworkService;
+import com.nytimes.NewYorkTimesApplication;
+import com.nytimes.R;
+import com.nytimes.activity.MainActivity;
+import com.nytimes.fragment.ArticlesFragment;
+import com.nytimes.network.AppComponent;
+import com.nytimes.network.NetworkService;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -38,12 +38,12 @@ import static org.mockito.Mockito.verify;
 import static org.powermock.api.mockito.PowerMockito.doReturn;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({NewYorkTimesApplication.class, ArticlesFragment.class, MainActivity.class
-        , ProgressDialog.class, com.newyorktimes.network.Service.class, NetworkService.class})
+        , ProgressDialog.class, com.nytimes.network.Service.class, NetworkService.class})
 public class ArticlesFragmentTest {
 
     @Mock
@@ -83,7 +83,7 @@ public class ArticlesFragmentTest {
     private FragmentTransaction mockFragmentTransaction;
 
     @Mock
-    private com.newyorktimes.network.Service service;
+    private com.nytimes.network.Service service;
 
     @Mock
     private NetworkService networkService;
@@ -101,7 +101,7 @@ public class ArticlesFragmentTest {
 
         spyMainActivity = spy(new MainActivity());
         spyArticlesFragment = spy(ArticlesFragment.class);
-        service = new com.newyorktimes.network.Service(networkService);
+        service = new com.nytimes.network.Service(networkService);
 
         doReturn(spyMainActivity).when(spyArticlesFragment).getActivity();
         doReturn(mockApplication).when(spyMainActivity).getApplication();

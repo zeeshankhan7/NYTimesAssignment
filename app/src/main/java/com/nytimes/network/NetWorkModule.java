@@ -1,11 +1,11 @@
-package com.newyorktimes.network;
+package com.nytimes.network;
 
 import android.app.Application;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.newyorktimes.BuildConfig;
+import com.nytimes.BuildConfig;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

@@ -1,5 +1,5 @@
 
-package com.newyorktimes.model;
+package com.nytimes.model;
 
 import java.io.Serializable;
 import java.util.List;

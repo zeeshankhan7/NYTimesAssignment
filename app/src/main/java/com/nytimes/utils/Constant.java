@@ -1,7 +1,7 @@
-package com.newyorktimes.utils;
+package com.nytimes.utils;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 public class Constant {

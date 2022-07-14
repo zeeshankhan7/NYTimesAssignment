@@ -1,14 +1,14 @@
-package com.newyorktimes.utils;
+package com.nytimes.utils;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 public class NewYorkTimesProgressDialog  extends Dialog {
@@ -21,7 +21,7 @@ public class NewYorkTimesProgressDialog  extends Dialog {
         ProgressBar progressBar = new ProgressBar(mContext);
         dialog1.addContentView(progressBar, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         if (progressBar.getIndeterminateDrawable() != null) {
-            progressBar.getIndeterminateDrawable().setColorFilter(mContext.getResources().getColor(com.newyorktimes.R.color.wallet_holo_blue_light), android.graphics.PorterDuff.Mode.SRC_IN);
+            progressBar.getIndeterminateDrawable().setColorFilter(mContext.getResources().getColor(com.nytimes.R.color.wallet_holo_blue_light), android.graphics.PorterDuff.Mode.SRC_IN);
         }
         try {
             dialog1.show();
@@ -40,7 +40,7 @@ public class NewYorkTimesProgressDialog  extends Dialog {
     }
 
     public NewYorkTimesProgressDialog(@NonNull Context context) {
-        super(context, com.newyorktimes.R.style.NewDialog);
+        super(context, com.nytimes.R.style.NewDialog);
         this.mContext = context;
     }
 }

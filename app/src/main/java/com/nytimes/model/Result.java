@@ -1,5 +1,5 @@
 
-package com.newyorktimes.model;
+package com.nytimes.model;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

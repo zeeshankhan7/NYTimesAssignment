@@ -1,11 +1,11 @@
-package com.newyorktimes.adapter;
+package com.nytimes.adapter;
 
 import android.app.FragmentManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,15 +14,15 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
-import com.newyorktimes.R;
-import com.newyorktimes.activity.MainActivity;
-import com.newyorktimes.fragment.ArticleDetailFragment;
-import com.newyorktimes.model.Response;
-import com.newyorktimes.utils.Constant;
-import com.newyorktimes.utils.FragmentHelper;
+import com.nytimes.R;
+import com.nytimes.activity.MainActivity;
+import com.nytimes.fragment.ArticleDetailFragment;
+import com.nytimes.model.Response;
+import com.nytimes.utils.Constant;
+import com.nytimes.utils.FragmentHelper;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2021.
  */
 
 public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
@@ -103,17 +103,17 @@ public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHo
         holder.source.setText(response.getResults().get(position).getSource());
         holder.byLine.setText(response.getResults().get(position).getByline());
 
-
-        Glide.with(mainActivity).load(response.getResults().get(position).getMedia().get(0).getMediaMetadata().get(0).getUrl()).asBitmap().centerCrop().into(new BitmapImageViewTarget(holder.img_article_icon) {
-            @Override
-            protected void setResource(Bitmap resource) {
-                RoundedBitmapDrawable circularBitmapDrawable =
-                        RoundedBitmapDrawableFactory.create(mainActivity.getResources(), resource);
-                circularBitmapDrawable.setCircular(true);
-                holder.img_article_icon.setImageDrawable(circularBitmapDrawable);
-            }
-        });
-
+if(response!=null&&response.getResults()!=null&&response.getResults().size()>0&&response.getResults().get(position).getMedia()!=null&&response.getResults().get(position).getMedia().size()>0&&response.getResults().get(position).getMedia().get(0).getMediaMetadata()!=null&&response.getResults().get(position).getMedia().get(0).getMediaMetadata().size()>0&&response.getResults().get(position).getMedia().get(0).getMediaMetadata().get(0).getUrl()!=null) {
+    Glide.with(mainActivity).load(response.getResults().get(position).getMedia().get(0).getMediaMetadata().get(0).getUrl()).asBitmap().centerCrop().into(new BitmapImageViewTarget(holder.img_article_icon) {
+        @Override
+        protected void setResource(Bitmap resource) {
+            RoundedBitmapDrawable circularBitmapDrawable =
+                    RoundedBitmapDrawableFactory.create(mainActivity.getResources(), resource);
+            circularBitmapDrawable.setCircular(true);
+            holder.img_article_icon.setImageDrawable(circularBitmapDrawable);
+        }
+    });
+}
     }
 
     // Return the size of your dataset (invoked by the layout manager)

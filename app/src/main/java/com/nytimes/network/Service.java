@@ -1,8 +1,8 @@
-package com.newyorktimes.network;
+package com.nytimes.network;
 
 import android.util.Log;
 
-import com.newyorktimes.model.Response;
+import com.nytimes.model.Response;
 
 import rx.Subscriber;
 import rx.Subscription;
@@ -10,7 +10,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by punit.shrirao on 09-05-2017.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 public class Service {

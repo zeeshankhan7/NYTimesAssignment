@@ -1,4 +1,4 @@
-package com.newyorktimes.fragment;
+package com.nytimes.fragment;
 
 import android.app.Fragment;
 import android.graphics.Bitmap;
@@ -11,12 +11,12 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.newyorktimes.R;
-import com.newyorktimes.utils.Constant;
-import com.newyorktimes.utils.NewYorkTimesProgressDialog;
+import com.nytimes.R;
+import com.nytimes.utils.Constant;
+import com.nytimes.utils.NewYorkTimesProgressDialog;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2021.
  */
 
 public class ArticleDetailFragment extends Fragment {

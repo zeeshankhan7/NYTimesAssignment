@@ -1,4 +1,4 @@
-package com.newyorktimes.test;
+package com.nytimes.test;
 
 import android.app.FragmentManager;
 import android.content.Context;
@@ -7,10 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.newyorktimes.activity.MainActivity;
-import com.newyorktimes.adapter.ArticlesAdapter;
-import com.newyorktimes.fragment.ArticlesFragment;
-import com.newyorktimes.model.Response;
+import com.nytimes.activity.MainActivity;
+import com.nytimes.adapter.ArticlesAdapter;
+import com.nytimes.fragment.ArticlesFragment;
+import com.nytimes.model.Response;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -22,7 +22,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import static org.mockito.Mockito.spy;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 @RunWith(PowerMockRunner.class)

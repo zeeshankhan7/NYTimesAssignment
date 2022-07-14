@@ -1,4 +1,4 @@
-package com.newyorktimes.utils;
+package com.nytimes.utils;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -6,7 +6,7 @@ import android.app.FragmentTransaction;
 
 
 /**
- * Created by punit.shrirao .
+ * Created by Zeeshan on 14-07-2022.
  * <p/>
  * This is a fragment utility class which is responsable for add ,replace fragment
  */
@@ -140,8 +140,8 @@ public class FragmentHelper {
      * @param fm
      */
     @SuppressWarnings({"JavaDoc", "unused"})
-    public static void addAndInitFragmentWithBackStackBacCompact(android.support.v4.app.Fragment fragment, int container, android.support.v4.app.FragmentManager fm) {
-        android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
+    public static void addAndInitFragmentWithBackStackBacCompact(androidx.fragment.app.Fragment fragment, int container, androidx.fragment.app.FragmentManager fm) {
+        androidx.fragment.app.FragmentTransaction ft = fm.beginTransaction();
         ft.add(container, fragment, fragment.getClass().getSimpleName());
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         ft.addToBackStack(fragment.getClass().getSimpleName());

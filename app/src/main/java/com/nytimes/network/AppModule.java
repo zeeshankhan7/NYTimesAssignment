@@ -1,4 +1,4 @@
-package com.newyorktimes.network;
+package com.nytimes.network;
 
 import android.app.Application;
 

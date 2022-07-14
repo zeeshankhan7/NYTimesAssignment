@@ -1,14 +1,14 @@
-package com.newyorktimes;
+package com.nytimes;
 
 import android.app.Application;
 
-import com.newyorktimes.network.AppComponent;
-import com.newyorktimes.network.AppModule;
-import com.newyorktimes.network.DaggerAppComponent;
-import com.newyorktimes.network.NetWorkModule;
+import com.nytimes.network.AppComponent;
+import com.nytimes.network.AppModule;
+import com.nytimes.network.DaggerAppComponent;
+import com.nytimes.network.NetWorkModule;
 
 /**
- * Created by punit.shrirao on 13-03-2018.
+ * Created by Zeeshan on 14-07-2022.
  */
 
 public class NewYorkTimesApplication  extends Application {

@@ -1,5 +1,5 @@
 
-package com.newyorktimes.model;
+package com.nytimes.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

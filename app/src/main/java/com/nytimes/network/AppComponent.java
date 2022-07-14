@@ -1,9 +1,9 @@
-package com.newyorktimes.network;
+package com.nytimes.network;
 
 
 
-import com.newyorktimes.activity.MainActivity;
-import com.newyorktimes.fragment.ArticlesFragment;
+import com.nytimes.activity.MainActivity;
+import com.nytimes.fragment.ArticlesFragment;
 
 import javax.inject.Singleton;
 
